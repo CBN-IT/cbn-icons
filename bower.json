@@ -1,5 +1,5 @@
 {
-  "name": "microsoft-office-icons",
+  "name": "cbn-icons",
   "private": true,
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5",
