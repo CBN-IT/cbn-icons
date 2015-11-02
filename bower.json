@@ -1,14 +1,10 @@
 {
-  "name": "cbn-icons",
-  "private": true,
-  "dependencies": {
-    "polymer": "Polymer/polymer#^1.2",
-    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.8",
-    "iron-icon": "PolymerElements/iron-icon#^1.0.7"
-    
-  },
-    "devDependencies":{
-        "iron-icons": "PolymerElements/iron-icons#^1.0.3"  
+    "name": "cbn-icons",
+    "private": true,
+    "dependencies": {
+        "polymer": "Polymer/polymer#^1.2",
+        "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.8",
+        "iron-icon": "PolymerElements/iron-icon#^1.0.7"
     },
-  "version": "0.1"
+    "version": "0.1"
 }
