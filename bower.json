@@ -2,10 +2,13 @@
   "name": "cbn-icons",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.5",
-    "core-iconset-svg": "Polymer/core-iconset-svg#^0.5",
-    "core-icon": "Polymer/core-icon#^0.5",
-    "core-icons": "Polymer/core-icons#^0.5"
+    "polymer": "Polymer/polymer#^1.2",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.8",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.7"
+    
   },
+    "devDependencies":{
+        "iron-icons": "PolymerElements/iron-icons#^1.0.3"  
+    },
   "version": "0.1"
 }

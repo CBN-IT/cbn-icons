@@ -9,12 +9,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <html>
 <head>
-    <title>core-list</title>
+    <title>iron-list</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="../webcomponentsjs/webcomponents.js"></script>
-    <link rel="import" href="../core-icon/core-icon.html">
-    <link rel="import" href="../core-icons/core-icons.html">
+    <link rel="import" href="../iron-icon/iron-icon.html">
+    <link rel="import" href="../iron-icons/iron-icons.html">
     <link rel="import" href="microsoft-office-icons.html">
     <style>
         html, body {
@@ -22,48 +22,50 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             -webkit-tap-highlight-color: transparent;
             overflow: hidden;
         }
-
-        .big{
-            width:100px;
-            height:100px;
-        }
     </style>
+	<style is="custom-style">
+		.big {
+			--iron-icon-height: 100px;
+			--iron-icon-width: 100px;
+		}
+	</style>
 </head>
 <body fit>
 <h3>Colored:</h3>
-<core-icon icon="microsoft-office:word" style="fill:#2a5699;" ></core-icon>
-<core-icon icon="microsoft-office:excel" style="fill:#207245;"></core-icon>
-<core-icon icon="microsoft-office:powerpoint" style="fill:#d24625;"></core-icon>
-<core-icon icon="microsoft-office:outlook" style="fill:#0071c5;"></core-icon>
-<core-icon icon="microsoft-office:access" style="fill:#a33639;"></core-icon>
-<core-icon icon="microsoft-office:onenote" style="fill:#733781;"></core-icon>
-<core-icon icon="microsoft-office:publisher" style="fill:#077467;"></core-icon>
-<core-icon icon="microsoft-office:lync" style="fill:#0071c5;"></core-icon>
-<core-icon icon="microsoft-office:infopath" style="fill:#733781;"></core-icon>
+<iron-icon icon="microsoft-office:word" class="colored word"></iron-icon>
+<iron-icon icon="microsoft-office:excel" class="colored excel"></iron-icon>
+<iron-icon icon="microsoft-office:powerpoint" class="colored powerpoint"></iron-icon>
+<iron-icon icon="microsoft-office:outlook" class="colored outlook"></iron-icon>
+<iron-icon icon="microsoft-office:access" class="colored access"></iron-icon>
+<iron-icon icon="microsoft-office:onenote" class="colored onenote"></iron-icon>
+<iron-icon icon="microsoft-office:publisher" class="colored publisher"></iron-icon>
+<iron-icon icon="microsoft-office:lync" class="colored lync"></iron-icon>
+<iron-icon icon="microsoft-office:infopath" class="colored infopath"></iron-icon>
 <br />
 <h3>Not styled</h3>
 <br />
-<core-icon icon="microsoft-office:word" ></core-icon>
-<core-icon icon="microsoft-office:excel" ></core-icon>
-<core-icon icon="microsoft-office:powerpoint" ></core-icon>
-<core-icon icon="microsoft-office:outlook"></core-icon>
-<core-icon icon="microsoft-office:access"></core-icon>
-<core-icon icon="microsoft-office:onenote"></core-icon>
-<core-icon icon="microsoft-office:publisher"></core-icon>
-<core-icon icon="microsoft-office:lync"></core-icon>
-<core-icon icon="microsoft-office:infopath"></core-icon>
+<iron-icon icon="microsoft-office:word" ></iron-icon>
+<iron-icon icon="microsoft-office:excel" ></iron-icon>
+<iron-icon icon="microsoft-office:powerpoint" ></iron-icon>
+<iron-icon icon="microsoft-office:outlook"></iron-icon>
+<iron-icon icon="microsoft-office:access"></iron-icon>
+<iron-icon icon="microsoft-office:onenote"></iron-icon>
+<iron-icon icon="microsoft-office:publisher"></iron-icon>
+<iron-icon icon="microsoft-office:lync"></iron-icon>
+<iron-icon icon="microsoft-office:infopath"></iron-icon>
 <br />
 <h3>Big</h3>
 <br />
-<core-icon icon="microsoft-office:word" style="fill:#2a5699;" class="big"></core-icon>
-<core-icon icon="microsoft-office:excel" style="fill:#207245;" class="big"></core-icon>
-<core-icon icon="microsoft-office:powerpoint" style="fill:#d24625;" class="big"></core-icon>
-<core-icon icon="microsoft-office:outlook" style="fill:#0071c5;" class="big"></core-icon>
-<core-icon icon="microsoft-office:access" style="fill:#a33639;" class="big"></core-icon>
-<core-icon icon="microsoft-office:onenote" style="fill:#733781;" class="big"></core-icon>
-<core-icon icon="microsoft-office:publisher" style="fill:#077467;" class="big"></core-icon>
-<core-icon icon="microsoft-office:lync" style="fill:#0071c5;" class="big"></core-icon>
-<core-icon icon="microsoft-office:infopath" style="fill:#733781;" class="big"></core-icon>
+<iron-icon icon="microsoft-office:word" class="colored word big"></iron-icon>
+<iron-icon icon="microsoft-office:excel" class="colored excel big"></iron-icon>
+<iron-icon icon="microsoft-office:powerpoint" class="colored powerpoint big"></iron-icon>
+<iron-icon icon="microsoft-office:outlook" class="colored outlook big"></iron-icon>
+<iron-icon icon="microsoft-office:access" class="colored access big"></iron-icon>
+<iron-icon icon="microsoft-office:onenote" class="colored onenote big"></iron-icon>
+<iron-icon icon="microsoft-office:publisher" class="colored publisher big"></iron-icon>
+<iron-icon icon="microsoft-office:lync" class="colored lync big"></iron-icon>
+<iron-icon icon="microsoft-office:infopath" class="colored infopath big"></iron-icon>
+
 </body>
 </html>
 
