@@ -1,6 +1,6 @@
 {
     "name": "cbn-icons",
-    "version": "0.1",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "polymer": "Polymer/polymer#^1.3.1",
