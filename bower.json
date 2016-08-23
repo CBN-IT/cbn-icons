@@ -1,7 +1,6 @@
 {
     "name": "cbn-icons",
     "version": "1.0.0",
-    "private": true,
     "dependencies": {
         "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.9"
     },
