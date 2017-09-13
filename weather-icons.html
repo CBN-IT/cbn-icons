@@ -1,283 +1,40 @@
 <link rel="import" href="../iron-iconset-svg/iron-iconset-svg.html">
-<!--source https://www.amcharts.com/free-animated-svg-weather-icons/-->
+
+
+
 <iron-iconset-svg name="weather" size="64">
-	<svg >
+	<svg>
 		<g id="01d">
-			<defs>
-				<style type="text/css">
-				#day,#night{
+			<style>
+				.day,.night{
 					transform: matrix(2, 0, 0, 2, -32, -32);
 				}
-				#cloudy-day-3{
+				.cloudy-day-3{
 					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
 				}
-				#cloudy-night-3{
+				.cloudy-night-3{
 					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
 				}
-				#cloudy{
+				.cloudy{
 					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
 				}
-				#thunder{
+				.thunder{
 					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
 				}
-				#rainy-7{
+				.rainy-7{
 					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
 				}
-				#rainy-1{
+				.rainy-1{
 					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
 				}
-				#rainy-night-1{
+				.rainy-night-1{
 					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
 				}
-				#snowy-6{
+				.snowy-6{
 					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
 				}
-	
-				@keyframes am-weather-cloud-1 {
-					0% {
-						transform: translate(-5px,0px);
-					}
-					50% {
-						transform: translate(10px,0px);
-					}
-					100% {
-						transform: translate(-5px,0px);
-					}
-				}
-	
-				.am-weather-cloud-1 {
-					animation: am-weather-cloud-1 7s linear 0s infinite;
-				}
-	
-				@keyframes am-weather-cloud-2 {
-					0% {
-						transform: translate(0px,0px);
-					}
-					50% {
-						transform: translate(2px,0px);
-					}
-					100% {
-						transform: translate(0px,0px);
-					}
-				}
-	
-				.am-weather-cloud-2 {
-					animation: am-weather-cloud-2 3s linear 0s infinite;
-				}
-	
-				@keyframes am-weather-stroke {
-					0% {
-						transform: translate(0px,0px);
-					}
-					2% {
-						transform: translate(0.3px,0px);
-					}
-					4% {
-						transform: translate(0px,0px);
-					}
-					6% {
-						transform: translate(0.5px,0.4px);
-					}
-					8% {
-						transform: translate(0px,0px);
-					}
-					10% {
-						transform: translate(0.3px,0px);
-					}
-					12% {
-						transform: translate(0px,0px);
-					}
-					14% {
-						transform: translate(0.3px,0px);
-					}
-					16% {
-						transform: translate(0px,0px);
-					}
-					18% {
-						transform: translate(0.3px,0px);
-					}
-					20% {
-						transform: translate(0px,0px);
-					}
-					22% {
-						transform: translate(1px,0px);
-					}
-					24% {
-						transform: translate(0px,0px);
-					}
-					26% {
-						transform: translate(-1px,0px);
-					}
-					28% {
-						transform: translate(0px,0px);
-					}
-					40% {
-						fill: orange;
-						transform: translate(0px,0px);
-					}
-					65% {
-						fill: white;
-						transform: translate(-1px,5px);
-					}
-					61% {
-						fill: orange;
-					}
-					100% {
-						transform: translate(0px,0px);
-					}
-				}
-	
-				.am-weather-stroke {
-					animation: am-weather-stroke 1.11s linear 0s infinite;
-				}
-	
-				@keyframes am-weather-sun {
-					0% { transform: rotate(0deg); }
-					100% { transform: rotate(360deg); }
-				}
-				.am-weather-sun {
-					animation: am-weather-sun 9s linear 0s infinite;
-				}
-	
-				@keyframes am-weather-sun-shiny {
-					0% {
-						stroke-dasharray: 3px 10px;
-						stroke-dashoffset: 0px;
-					}
-	
-					50% {
-						stroke-dasharray: 0.1px 10px;
-						stroke-dashoffset: -1px;
-					}
-	
-					100% {
-						stroke-dasharray: 3px 10px;
-						stroke-dashoffset: 0px;
-					}
-				}
-	
-				.am-weather-sun-shiny line {
-					animation: am-weather-sun-shiny 2s linear 0s infinite;
-				}
-	
-	
-				@keyframes am-weather-moon {
-					0% {
-						transform: rotate(0deg);
-					}
-	
-					50% {
-						transform: rotate(15deg);
-					}
-	
-					100% {
-						transform: rotate(0deg);
-					}
-				}
-	
-				.am-weather-moon {
-					animation: am-weather-moon 6s linear 0s infinite;
-					transform-origin: 12.5px 15.15px 0;
-				}
-	
-				@keyframes am-weather-moon-star-1 {
-					0% {
-						opacity: 0;
-					}
-	
-					100% {
-						opacity: 1;
-					}
-				}
-	
-				.am-weather-moon-star-1 {
-					animation: am-weather-moon-star-1 5s linear 3s 1;
-				}
-	
-				@keyframes am-weather-moon-star-2 {
-					0% {
-						opacity: 0;
-					}
-					100% {
-						opacity: 1;
-					}
-				}
-	
-				.am-weather-moon-star-2 {
-					animation: am-weather-moon-star-2 4s linear 5s 1;
-				}
-	
-				@keyframes am-weather-rain {
-					0% {
-						stroke-dashoffset: 0;
-					}
-	
-					100% {
-						stroke-dashoffset: -100;
-					}
-				}
-	
-				.am-weather-rain-1 {
-					animation: am-weather-rain 8s linear 0s infinite;
-				}
-	
-				.am-weather-rain-2 {
-					animation: am-weather-rain 8s linear 0.25s infinite;
-				}
-	
-	
-				@keyframes am-weather-snow {
-					0% {
-						transform: translateX(0) translateY(0);
-					}
-					33.33% {
-						transform: translateX(-1.2px) translateY(2px);
-					}
-					66.66% {
-						transform: translateX(1.4px) translateY(4px);
-						opacity: 1;
-					}
-					100% {
-						transform: translateX(-1.6px) translateY(6px);
-						opacity: 0;
-					}
-				}
-	
-				@keyframes am-weather-snow-reverse {
-					0% {
-						transform: translateX(0) translateY(0);
-					}
-					33.33% {
-						transform: translateX(1.2px) translateY(2px);
-					}
-					66.66% {
-						transform: translateX(-1.4px) translateY(4px);
-						opacity: 1;
-					}
-					100% {
-						transform: translateX(1.6px) translateY(6px);
-						opacity: 0;
-					}
-				}
-	
-				.am-weather-snow-1 {
-					animation: am-weather-snow 2s linear 0s infinite;
-				}
-	
-				.am-weather-snow-2 {
-					animation: am-weather-snow 2s linear 1.2s infinite;
-				}
-	
-				.am-weather-snow-3 {
-					animation: am-weather-snow-reverse 2s linear 0s infinite;
-				}
-	
-				.am-weather-easing-ease-in-out {
-					animation-timing-function: ease-in-out;
-				}
-				</style>
-			</defs>
-			<g id="day">
+			</style>
+			<g class="day">
 				<g transform="translate(32,32)">
 					<g class="am-weather-sun am-weather-sun-shiny am-weather-easing-ease-in-out">
 						<g>
@@ -309,282 +66,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="01n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="night">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="night">
 				<g transform="translate(20,20)">
 					<g class="am-weather-moon-star-1">
 						<polygon fill="orange" points="3.3,1.5 4,2.7 5.2,3.3 4,4 3.3,5.2 2.7,4 1.5,3.3 2.7,2.7" stroke="none" stroke-miterlimit="10"/>
@@ -598,282 +112,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="02d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy-day-3">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy-day-3">
 				<g transform="translate(20,10)">
 					<g transform="translate(0,16)">
 						<g class="am-weather-sun">
@@ -910,282 +181,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="02n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy-night-3">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy-night-3">
 				<g transform="translate(20,10)">
 					<g transform="translate(16,4), scale(0.8)">
 						<g class="am-weather-moon-star-1">
@@ -1204,282 +232,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="03d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
 						<path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#91C0F8" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-10,-8), scale(0.6)"/>
@@ -1490,282 +275,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="03n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
 						<path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#91C0F8" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-10,-8), scale(0.6)"/>
@@ -1776,282 +318,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="04d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
 						<path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#91C0F8" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-10,-8), scale(0.6)"/>
@@ -2062,282 +361,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="04n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="cloudy">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="cloudy">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
 						<path d="M47.7,35.4     c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3     c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#91C0F8" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-10,-8), scale(0.6)"/>
@@ -2348,282 +404,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="09d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="rainy-7">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="rainy-7">
 				<g transform="translate(20,10)">
 					<g>
 						<path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
@@ -2636,282 +449,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="09n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="rainy-7">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="rainy-7">
 				<g transform="translate(20,10)">
 					<g>
 						<path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
@@ -2924,282 +494,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="10d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="rainy-1">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="rainy-1">
 				<g transform="translate(20,10)">
 					<g transform="translate(0,16), scale(1.2)">
 						<g class="am-weather-sun">
@@ -3240,282 +567,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="10n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="rainy-night-1">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="rainy-night-1">
 				<g transform="translate(20,10)">
 					<g transform="translate(16,4), scale(0.8)">
 						<g class="am-weather-moon-star-1">
@@ -3538,282 +622,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="11d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="thunder">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="thunder">
 
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
@@ -3830,282 +671,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="11n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="thunder">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="thunder">
 
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-1">
@@ -4122,282 +720,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="13d">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="snowy-6">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="snowy-6">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-2">
 						<path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
@@ -4429,282 +784,39 @@
 				</g>
 			</g>
 		</g>
+	</svg>
+	<svg>
 		<g id="13n">
-			<defs>
-				<style type="text/css">
-					#day,#night{
-						transform: matrix(2, 0, 0, 2, -32, -32);
-					}
-					#cloudy-day-3{
-						transform: matrix(1.5, 0, 0, 1.5, -10, -10);
-					}
-					#cloudy-night-3{
-						transform: matrix(1.5, 0, 0, 1.5, -22, -10);
-					}
-					#cloudy{
-						transform: matrix(1.8, 0, 0, 1.8, -26, -20);
-					}
-					#thunder{
-						transform: matrix(1.4, 0, 0, 1.4, -12, -23);
-					}
-					#rainy-7{
-						transform: matrix(1.8, 0, 0, 1.8, -25, -37);
-					}
-					#rainy-1{
-						transform: matrix(1.4, 0, 0, 1.4, -5, -15);
-					}
-					#rainy-night-1{
-						transform: matrix(1.6, 0, 0, 1.6, -27, -22);
-					}
-					#snowy-6{
-						transform: matrix(1.8, 0, 0, 1.8, -27, -38);
-					}
-
-					@keyframes am-weather-cloud-1 {
-						0% {
-							transform: translate(-5px,0px);
-						}
-						50% {
-							transform: translate(10px,0px);
-						}
-						100% {
-							transform: translate(-5px,0px);
-						}
-					}
-
-					.am-weather-cloud-1 {
-						animation: am-weather-cloud-1 7s linear 0s infinite;
-					}
-
-					@keyframes am-weather-cloud-2 {
-						0% {
-							transform: translate(0px,0px);
-						}
-						50% {
-							transform: translate(2px,0px);
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-cloud-2 {
-						animation: am-weather-cloud-2 3s linear 0s infinite;
-					}
-
-					@keyframes am-weather-stroke {
-						0% {
-							transform: translate(0px,0px);
-						}
-						2% {
-							transform: translate(0.3px,0px);
-						}
-						4% {
-							transform: translate(0px,0px);
-						}
-						6% {
-							transform: translate(0.5px,0.4px);
-						}
-						8% {
-							transform: translate(0px,0px);
-						}
-						10% {
-							transform: translate(0.3px,0px);
-						}
-						12% {
-							transform: translate(0px,0px);
-						}
-						14% {
-							transform: translate(0.3px,0px);
-						}
-						16% {
-							transform: translate(0px,0px);
-						}
-						18% {
-							transform: translate(0.3px,0px);
-						}
-						20% {
-							transform: translate(0px,0px);
-						}
-						22% {
-							transform: translate(1px,0px);
-						}
-						24% {
-							transform: translate(0px,0px);
-						}
-						26% {
-							transform: translate(-1px,0px);
-						}
-						28% {
-							transform: translate(0px,0px);
-						}
-						40% {
-							fill: orange;
-							transform: translate(0px,0px);
-						}
-						65% {
-							fill: white;
-							transform: translate(-1px,5px);
-						}
-						61% {
-							fill: orange;
-						}
-						100% {
-							transform: translate(0px,0px);
-						}
-					}
-
-					.am-weather-stroke {
-						animation: am-weather-stroke 1.11s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun {
-						0% { transform: rotate(0deg); }
-						100% { transform: rotate(360deg); }
-					}
-					.am-weather-sun {
-						animation: am-weather-sun 9s linear 0s infinite;
-					}
-
-					@keyframes am-weather-sun-shiny {
-						0% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-
-						50% {
-							stroke-dasharray: 0.1px 10px;
-							stroke-dashoffset: -1px;
-						}
-
-						100% {
-							stroke-dasharray: 3px 10px;
-							stroke-dashoffset: 0px;
-						}
-					}
-
-					.am-weather-sun-shiny line {
-						animation: am-weather-sun-shiny 2s linear 0s infinite;
-					}
-
-
-					@keyframes am-weather-moon {
-						0% {
-							transform: rotate(0deg);
-						}
-
-						50% {
-							transform: rotate(15deg);
-						}
-
-						100% {
-							transform: rotate(0deg);
-						}
-					}
-
-					.am-weather-moon {
-						animation: am-weather-moon 6s linear 0s infinite;
-						transform-origin: 12.5px 15.15px 0;
-					}
-
-					@keyframes am-weather-moon-star-1 {
-						0% {
-							opacity: 0;
-						}
-
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-1 {
-						animation: am-weather-moon-star-1 5s linear 3s 1;
-					}
-
-					@keyframes am-weather-moon-star-2 {
-						0% {
-							opacity: 0;
-						}
-						100% {
-							opacity: 1;
-						}
-					}
-
-					.am-weather-moon-star-2 {
-						animation: am-weather-moon-star-2 4s linear 5s 1;
-					}
-
-					@keyframes am-weather-rain {
-						0% {
-							stroke-dashoffset: 0;
-						}
-
-						100% {
-							stroke-dashoffset: -100;
-						}
-					}
-
-					.am-weather-rain-1 {
-						animation: am-weather-rain 8s linear 0s infinite;
-					}
-
-					.am-weather-rain-2 {
-						animation: am-weather-rain 8s linear 0.25s infinite;
-					}
-
-
-					@keyframes am-weather-snow {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(-1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(-1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					@keyframes am-weather-snow-reverse {
-						0% {
-							transform: translateX(0) translateY(0);
-						}
-						33.33% {
-							transform: translateX(1.2px) translateY(2px);
-						}
-						66.66% {
-							transform: translateX(-1.4px) translateY(4px);
-							opacity: 1;
-						}
-						100% {
-							transform: translateX(1.6px) translateY(6px);
-							opacity: 0;
-						}
-					}
-
-					.am-weather-snow-1 {
-						animation: am-weather-snow 2s linear 0s infinite;
-					}
-
-					.am-weather-snow-2 {
-						animation: am-weather-snow 2s linear 1.2s infinite;
-					}
-
-					.am-weather-snow-3 {
-						animation: am-weather-snow-reverse 2s linear 0s infinite;
-					}
-
-					.am-weather-easing-ease-in-out {
-						animation-timing-function: ease-in-out;
-					}
-				</style>
-			</defs>
-			<g id="snowy-6">
+			<style>
+				.day,.night{
+					transform: matrix(2, 0, 0, 2, -32, -32);
+				}
+				.cloudy-day-3{
+					transform: matrix(1.5, 0, 0, 1.5, -10, -10);
+				}
+				.cloudy-night-3{
+					transform: matrix(1.5, 0, 0, 1.5, -22, -10);
+				}
+				.cloudy{
+					transform: matrix(1.8, 0, 0, 1.8, -26, -20);
+				}
+				.thunder{
+					transform: matrix(1.4, 0, 0, 1.4, -12, -23);
+				}
+				.rainy-7{
+					transform: matrix(1.8, 0, 0, 1.8, -25, -37);
+				}
+				.rainy-1{
+					transform: matrix(1.4, 0, 0, 1.4, -5, -15);
+				}
+				.rainy-night-1{
+					transform: matrix(1.6, 0, 0, 1.6, -27, -22);
+				}
+				.snowy-6{
+					transform: matrix(1.8, 0, 0, 1.8, -27, -38);
+				}
+			</style>
+			<g class="snowy-6">
 				<g transform="translate(20,10)">
 					<g class="am-weather-cloud-2">
 						<path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#57A0EE" stroke="white" stroke-linejoin="round" stroke-width="1.2" transform="translate(-20,-11)"/>
@@ -4738,3 +850,4 @@
 		</g>
 	</svg>
 </iron-iconset-svg>
+  
